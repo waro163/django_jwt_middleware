@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'b7y*ef&2a8j_ki&ms*c_o#!zp$!bgk8c=2f%^q@9y16zntsp=2'
-JWT_SECRET = os.environ.get("JWT_SECRET", 'vm)_vkgs(reol#8%n=+*mc#@6ba3nh!y(zd*413=b+@x04#6qp')
+JWT_SECRET = os.environ.get("JWT_SECRET", 'b7y*ef&2a8j_ki&ms*c_o#!zp$!bgk8c=2f%^q@9y16zntsp=2')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
