@@ -3,6 +3,8 @@ import logging
 from ..utils.decode_jwt import decode_jwt
 
 logger = logging.getLogger(__name__)
+# Header encoding (see RFC5987)
+HTTP_HEADER_ENCODING = 'iso-8859-1'
 
 def get_authorization_header(request):
     """
