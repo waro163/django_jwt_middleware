@@ -1,6 +1,6 @@
 from django.utils.deprecation import MiddlewareMixin
 import logging
-from utils.decode_jwt import decode_jwt
+from ..utils.decode_jwt import decode_jwt
 
 logger = logging.getLogger(__name__)
 

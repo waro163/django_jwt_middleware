@@ -14,7 +14,7 @@ setup(
     long_description_content_type='text/markdown',
     author='waro163',
     author_email='waro163@163.com',
-    packages=find_packages(include=[]),
+    packages=find_packages(),
     include_package_data=True,
     install_requires=[
         'asgiref==3.2.7',
