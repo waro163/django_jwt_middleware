@@ -33,7 +33,7 @@ class JWTMiddleware(MiddlewareMixin):
         """
         auth = get_authorization_header(request).split()
         #
-        request.META['JWT_USER'] = None
+        request.META['REMOTE_USER'] = None
         request.META['jwt_payload'] = None
         if not auth or auth[0].lower() != self.keyword.lower().encode():
             return
@@ -41,7 +41,7 @@ class JWTMiddleware(MiddlewareMixin):
             token = auth[1].decode()
             jwt_payload = decode_jwt(token)
             # jwt_payload["token"] = token.decode('utf-8')
-            # request.META['JWT_USER'] = jwt_payload["uid"]
+            request.META['REMOTE_USER'] = jwt_payload
             request.META['jwt_payload'] = jwt_payload
         except Exception as ex:
             logger.error(ex)
