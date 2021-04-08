@@ -18,7 +18,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'asgiref==3.2.7',
-        'Django==3.0.7',
+        'Django==3.0.14',
         'PyJWT==1.7.1',
         'pytz==2019.3',
         'sqlparse==0.3.1',
